@@ -1,0 +1,8 @@
+.hover:hover + .hidden {
+  display: block;
+  color: red;
+}
+.hidden {
+  color: red;
+  display: none;
+}
