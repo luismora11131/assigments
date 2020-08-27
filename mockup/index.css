@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* allows us to include the padding and border in an element's total width and height*/
+  box-sizing: border-box;
+}
+
+/* Applies to the entire page */
+body {
+  color: white;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li {
+  list-style: none;
+}
+
+section {
+  border-bottom: black 5px solid;
+}
+
+.section-title {
+  text-align: center;
+  padding: 1rem;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+/* Navigation */
+nav {
+  background: black;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 5px;
+  text-transform: uppercase;
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+nav ul li:last-child {
+  border: none;
+}
+
+/* About */
+#about {
+  background: #48508b;
+  text-align: center;
+}
+
+#website-title {
+  padding: 1rem;
+}
+
+#about img {
+  width: 100%;
+}
+
+#about-copy {
+  padding: 1rem;
+}
+
+.ft-highlight {
+  color: #d89a37;
+  -webkit-text-stroke: 1px black;
+  font-weight: bold;
+}
+
+/* Gallery */
+#gallery {
+  background: #d89a37;
+}
+
+#gallery ul li {
+  padding: 1rem;
+}
+
+#gallery ul li img {
+  border: white 2px solid;
+  width: 100%;
+}
+
+/* Timeline */
+#timeline {
+  background: #bc4f4c;
+}
+
+#timeline ul li {
+  background: white;
+  margin: 1rem;
+  color: darkblue;
+  padding: 0.5rem;
+  font-size: 14px;
+}
+
+#timeline ul li span {
+  background: #d08840;
+  padding: 0.7rem;
+}
+
+/* Links/Footer */
+#links {
+  background: #48508b;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+/* Media Queries */
+@media (min-width: 750px) {
+  body {
+    background: lightgrey;
+  }
+  section {
+    margin: 0 2rem;
+    border-bottom: none;
+    border: 2px black solid;
+  }
+
+  #about img {
+    width: 60%;
+  }
+
+  #gallery ul {
+    display: flex;
+  }
+
+  #timeline ul {
+    margin: 0 6rem;
+  }
+}
